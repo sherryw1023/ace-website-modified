@@ -242,28 +242,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<button id="toTopBtn" style="
+			
+		<a href="#" id="toTopBtn" class="button primary" style="
 			position: fixed;
 			bottom: 40px;
 			right: 40px;
 			z-index: 9999;
-			background: #0077cc;
-			color: white;
-			border: none;
 			border-radius: 50%;
 			width: 56px;
 			height: 56px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-			cursor: pointer;
-		">
-			&uarr;
-		</button>
+		">↑</a>
 
 		<script>
-		document.getElementById('toTopBtn').onclick = function() {
+		document.getElementById('toTopBtn').onclick = function(e) {
+			e.preventDefault(); // 防止链接默认行为
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 		};
 		</script>
