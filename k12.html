@@ -242,6 +242,33 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+			<button id="toTopBtn" style="
+			position: fixed;
+			bottom: 40px;
+			right: 40px;
+			z-index: 9999;
+			background: #007bff;
+			color: white;
+			border: none;
+			border-radius: 50%;
+			width: 56px;
+			height: 56px;
+			font-size: 28px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			">
+			↑
+			</button>
+
+			<script>
+			document.getElementById('toTopBtn').onclick = function() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+			</script>
 
 	</body>
 </html>
