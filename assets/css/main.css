@@ -2113,7 +2113,7 @@ button,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0 ;
+  padding: 3em 0 3em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2141,7 +2141,8 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 2em 4em;
-    width: 50%; }
+    width: 50%;
+    height: 360px;}
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
@@ -2279,4 +2280,32 @@ button,
 
 ul.contact li {
   font-size: 0.8em;
+}
+
+#banner .content header h1 {
+    font-size: 2.8em;
+    line-height: 1.2;
+}
+
+#banner .content header p {
+    font-size: 1em;
+}
+
+.founder-card {
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.founder-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Space between Founder Card and introduction when stacked */
+@media screen and (max-width: 1280px) {
+    .founder-card {
+        margin-bottom: 3em;
+    }
 }
